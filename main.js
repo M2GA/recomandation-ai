@@ -46,5 +46,11 @@ var recommande = (pers, pref, fnct_sim = eucl_sim) => {
   .sort((a, b) => b[1] - a[1])
 }
 
+// Génération de la basse de données
+// Vous pouvez changer le nombre de personnes, livres
+// [1] @pers
+// [2] @livres
 const collecte = creation(50,80)
+
+// Affichage des recommandation
 console.log(recommande('P1', collecte))
